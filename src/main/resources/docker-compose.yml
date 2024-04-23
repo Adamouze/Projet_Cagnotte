@@ -1,0 +1,35 @@
+# Docker Compose configuration file
+version: '3.1'
+
+services:
+
+  # Service for the MariaDB database
+  db:
+    # The Docker image to use for the MariaDB database
+    image: mariadb:11.3.2
+    # The policy to apply when the container exits (always restart)
+    restart: always
+    # Environment variables for the MariaDB database
+    environment:
+      # The password for the MariaDB root user
+      MARIADB_ROOT_PASSWORD: root
+    # The ports to expose from the container to the host
+    ports:
+      # Expose MariaDB's default port (3306) on port 3307 of the host
+      - 3307:3306
+    # The volumes to mount into the container
+    volumes:
+      # Mount the local init.sql file into the Docker entrypoint directory
+      # This will run the init.sql script when the container starts
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  # Service for the Adminer database management tool
+  adminer:
+    # The Docker image to use for Adminer
+    image: adminer
+    # The policy to apply when the container exits (always restart)
+    restart: always
+    # The ports to expose from the container to the host
+    ports:
+      # Expose Adminer's default port (8080) on port 8081 of the host
+      - 8081:8080

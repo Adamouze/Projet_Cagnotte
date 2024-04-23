@@ -1,0 +1,1039 @@
+{
+	"info": {
+		"_postman_id": "81043341-4598-4ab3-bcef-c0c38275aab9",
+		"name": "Cagnotte project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29607727",
+		"_collection_link": "https://winter-meadow-27758.postman.co/workspace/MyPostmanWorkspace~88779fbd-7f6c-4f22-a27f-4ec288339cb1/collection/29607727-81043341-4598-4ab3-bcef-c0c38275aab9?action=share&source=collection_link&creator=29607727"
+	},
+	"item": [
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "createClient",
+					"item": [
+						{
+							"name": "createClient1",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/client/createClient?name=Test1&cagnotte=0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"client",
+										"createClient"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Test1"
+										},
+										{
+											"key": "cagnotte",
+											"value": "0"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createClient2",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/client/createClient?name=Test2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"client",
+										"createClient"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Test2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createClient3 (for no transactions)",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/client/createClient?name=Test3&cagnotte=15",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"client",
+										"createClient"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Test3"
+										},
+										{
+											"key": "cagnotte",
+											"value": "15"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createClientNull",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/client/createClient",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"client",
+										"createClient"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "createClientBlank",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/client/createClient?name=",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"client",
+										"createClient"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getClient",
+					"item": [
+						{
+							"name": "getClientbyId1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/client/getClient?id=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"client",
+										"getClient"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getClientbyId2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/client/getClient?id=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"client",
+										"getClient"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getClientbyId3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/client/getClient?id=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"client",
+										"getClient"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getClientbyName",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/client/getClient?name=Test2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"client",
+										"getClient"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Test2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getClientbyId&byName",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/client/getClient?id=1&name=Test1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"client",
+										"getClient"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "1"
+										},
+										{
+											"key": "name",
+											"value": "Test1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getClientNonExistingbyName",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/client/getClient?name=Test3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"client",
+										"getClient"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Test3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getClientNonExistingbyId",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/client/getClient?id=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"client",
+										"getClient"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getClientBlankName",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/client/getClient?name=",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"client",
+										"getClient"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "makeTransaction",
+					"item": [
+						{
+							"name": "makeTransactionBigAmount1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/makeTransaction?clientid=1&amount=10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"makeTransaction"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "1"
+										},
+										{
+											"key": "amount",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "makeTransactionBigAmount2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/makeTransaction?clientid=1&amount=20",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"makeTransaction"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "1"
+										},
+										{
+											"key": "amount",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "makeTransactionBigAmount3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/makeTransaction?clientid=1&amount=30",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"makeTransaction"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "1"
+										},
+										{
+											"key": "amount",
+											"value": "30"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "makeTransactionTinyAmount1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/makeTransaction?clientid=2&amount=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"makeTransaction"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "2"
+										},
+										{
+											"key": "amount",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "makeTransactionTinyAmount2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/makeTransaction?clientid=2&amount=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"makeTransaction"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "2"
+										},
+										{
+											"key": "amount",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "makeTransactionTinyAmount3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/makeTransaction?clientid=2&amount=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"makeTransaction"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "2"
+										},
+										{
+											"key": "amount",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "makeTransactionBlank",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/makeTransaction?clientid=&amount=",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"makeTransaction"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": ""
+										},
+										{
+											"key": "amount",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "makeTransactionClientNonExisting",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/makeTransaction?clientid=8&amount=10",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"makeTransaction"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "8"
+										},
+										{
+											"key": "amount",
+											"value": "10"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "makeTransactionNullAmount",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/makeTransaction?clientid=1&amount=",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"makeTransaction"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "1"
+										},
+										{
+											"key": "amount",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "getTransactions",
+					"item": [
+						{
+							"name": "getTransactions1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/getTransactions?clientid=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"getTransactions"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getTransactions2",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/getTransactions?clientid=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"getTransactions"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getTransactions3",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/getTransactions?clientid=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"getTransactions"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getTransactionsBlank",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/getTransactions?clientid=",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"getTransactions"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getTransactionNoTransactions",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/getTransactions?clientid=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"getTransactions"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getTransactionClientNonExisting",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/getTransactions?clientid=8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"getTransactions"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "8"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "isCagnotteAvailable",
+					"item": [
+						{
+							"name": "isCagnotteAvailableSuccess (Both conditions fullfilled)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/isCagnotteAvailable?clientid=1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"isCagnotteAvailable"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "isCagnotteAvailableFailed (Cagnotte Incomplete)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/isCagnotteAvailable?clientid=2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"isCagnotteAvailable"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "isCagnotteAvailableFailed (Transactions Incomplete)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/isCagnotteAvailable?clientid=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"isCagnotteAvailable"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "isCagnotteAvailableBlank",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/isCagnotteAvailable?clientid=",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"isCagnotteAvailable"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": ""
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "isCagnotteAvailableNonExistingClient",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/api/transaction/isCagnotteAvailable?clientid=8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"transaction",
+										"isCagnotteAvailable"
+									],
+									"query": [
+										{
+											"key": "clientid",
+											"value": "8"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
